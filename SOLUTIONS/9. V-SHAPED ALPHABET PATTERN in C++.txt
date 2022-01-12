@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i, j, p;
+    cout << "Enter the limit:";
+    int r;
+    cin >> r;
+
+    int x = 1;
+    int y = r * 2 - 1;
+    for (i = r; i >= 1; i--)
+    {
+        for (j = 1; j <= r * 2; j++)
+        {
+            if (j == x || j == y)
+            {
+                cout << char(i + 64);
+            }
+            else
+            {
+                cout << " ";
+            }
+        }
+        x++;
+        y--;
+        cout << "\n";
+    }
+}

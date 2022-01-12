@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  cout<<"Enter the limit:";
+  int r,i,a,b;
+  int np=1;
+  cin>>r;
+  for(i=1;i<=r;i++)
+       {
+       for(a=r-1;a>=i;a--)
+       {
+            cout<<" ";
+       }
+       for(b=np;b>=1;b--)
+       {
+           cout<<b;
+       }
+       np+=2;
+       cout<<"\n";
+       }
+}
